@@ -1,0 +1,802 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    scroll-padding-top: 3rem;
+    font-family: var(--font-family-2);
+
+}
+
+:root {
+    --main-color: #085887;
+    --secound-color: #f5cbc5;
+    --text-color: #1c1b1b;
+    --navtext-color: #ffffff;
+    --text-alter-color: #e36a0e;
+    --poppinns-font: "poppins", sans-placeif;
+    --font-family-2: "plakyfair Display", placeif;
+}
+
+html,
+body {
+    position: relative;
+    height: 100%;
+}
+
+body {
+    color: var(--text-color);
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    width: 100%;
+
+}
+
+section {
+    padding: 3rem 0 2rem;
+}
+
+.container {
+    width: 100%;
+}
+
+nav {
+    position: absolute;
+    top: -2px;
+    left: 0;
+    width: 100%;
+    z-index: 100;
+}
+
+.nav {
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 1.5rem;
+    background-color: var(--main-color);
+    box-shadow: 0 0 3rem rgba(25, 25, 24, 0.3);
+}
+
+.logo {
+    color: var(--navtext-color);
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    column-gap: 1.5rem;
+}
+
+.navbar a {
+    color: var(--navtext-color);
+    transition: 0.4s all cubic-bezier(0.075, 0.82, 0.165, 1);
+    padding: 0 .7rem;
+}
+
+.navbar a:hover {
+    border-bottom: 2px solid var(--navtext-color);
+    border-radius: 2rem;
+    transition: 0.4s all cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.nav button {
+    display: none;
+}
+
+.home img {
+    position: relative;
+    top: -50px;
+    width: 100%;
+    height: 90vh;
+    object-fit: cover;
+}
+
+.welcome-text {
+    padding: 165px 0 225px 0;
+    text-align: center;
+    color: var(--navtext-color);
+    position: relative;
+    top: -500px;
+    background-color: rgba(0, 0, 0, 0.338);
+}
+
+
+.welcome-text h5 {
+    font-size: 35px;
+}
+
+.bookingform {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    border-radius: 15px;
+    padding: 30px;
+    width: 60%;
+    position: relative;
+    top: -700px;
+    left: 24%;
+    text-align: center;
+}
+
+.bookingform .box {
+    padding: 15px 60px;
+    font-size: 15px;
+}
+
+.info-btn button {
+    font-size: 17px;
+    padding: 15px 30px;
+    background-color: var(--text-alter-color);
+    color: var(--navtext-color);
+    border: none;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+.info-btn button:hover {
+    border-radius: 0px;
+}
+
+section h1 {
+    text-align: center;
+    font-size: 30px;
+    font-weight: 700;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+h1 span {
+    color: var(--text-alter-color);
+    font-size: 35px;
+}
+
+.service {
+    width: 80%;
+    position: relative;
+    top: -600px;
+    left: 10%;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    padding: .7rem;
+}
+
+.card {
+    background: var(--secound-color);
+    padding: 15px;
+    border-radius: 1rem;
+}
+
+.card:hover {
+    box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.3);
+}
+
+.icon {
+    background-color: var(--navtext-color);
+    color: var(--secound-color);
+    border-radius: 70px;
+    padding: 15px;
+    display: inline-block;
+    margin-bottom: 15px;
+    font-size: 1.5rem;
+}
+
+.card p {
+    padding-top: 5px;
+}
+
+.Vendors {
+    width: 80%;
+    position: relative;
+    top: -600px;
+    left: 10%;
+}
+
+.Vandor-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+    gap: 30px;
+}
+
+.vendor-box {
+    background-color: var(--secound-color);
+    padding: 15px;
+    border-radius: 10px;
+}
+
+
+.vendor-box:hover {
+    transform: rotate3d(0, 1, 1, 5deg);
+}
+
+
+.vandor-img img {
+    width: 90%;
+    height: 30vh;
+    border-radius: 5px;
+    object-fit: cover;
+}
+
+.star {
+    text-align: center;
+    background-color: yellow;
+    width: 90%;
+    padding: 5px 0 5px 5px;
+    border-radius: 5px;
+}
+
+.vendor-info h4 {
+    font-size: 17px;
+    padding: 5px;
+}
+
+.vendor-info p {
+    padding: 0 5px 5px 5px;
+}
+
+.vendor-info h5 {
+    font-size: 15px;
+    background-color: var(--text-color);
+    color: var(--secound-color);
+    padding: 5px 0 5px 5px;
+    text-align: center;
+    width: 90%;
+    border-radius: 5px;
+}
+
+.Venue {
+    width: 80%;
+    position: relative;
+    top: -600px;
+    left: 10%;
+}
+
+.Venue-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+    gap: 30px;
+}
+
+.Venue-container .Venue-box {
+    position: relative;
+    border-radius: 10px;
+    box-shadow: 0 0 1rem rgba(0, 0, 0, 0.3);
+    overflow: hidden;
+    display: flex;
+}
+
+.Venue-box img {
+    width: 100%;
+    height: 200px;
+    transition: .5s ease;
+    opacity: 1;
+}
+
+.Venue-box:hover img {
+    transform: scale(1.1);
+}
+
+.Venue-box .Venue-layer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(rgba(0, 0, 0, 0.1), var(--text-color));
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    padding: 0 3rem;
+    transform: translateY(100%);
+    transition: .5s ease;
+}
+
+.Venue-box:hover .Venue-layer {
+    transform: translateY(0);
+}
+
+.Venue-layer h4 {
+    font-size: 2rem;
+    color: var(--navtext-color);
+    border-radius: 5px;
+    padding: 5px;
+}
+
+.Venue-layer p {
+    font-size: 1rem;
+    margin: .3rem 0 1rem;
+    color: var(--navtext-color);
+    border-radius: 5px;
+    padding: 5px;
+}
+
+.Venue-layer a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 7rem;
+    height: 2rem;
+    background: transparent;
+}
+
+.btn button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 20px;
+    outline: none;
+    background-color: var(--main-color);
+    color: var(--navtext-color);
+    font-size: 15px;
+}
+
+
+.btn button:hover {
+    cursor: pointer;
+    box-shadow: 0 0 1rem rgba(0, 0, 0, 0.3);
+}
+
+.Venue-layer a {
+    font-size: 2rem;
+    color: var(--bg-color);
+}
+
+.E-invite {
+    width: 80%;
+    position: relative;
+    top: -600px;
+    left: 10%;
+}
+
+.Ecard {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+
+.Ecard img {
+    width: 95%;
+    height: 50vh;
+    border-radius: 5px;
+    outline: 1px solid var(--secound-color);
+}
+
+.Ecard img:hover {
+    transform: scale(.9);
+    cursor: pointer;
+    transition: .7s;
+}
+
+.Contacts {
+    background-color: var(--text-alter-color);
+    color: var(--navtext-color);
+    position: relative;
+    top: -600px;
+}
+
+.end {
+    width: 80%;
+    position: relative;
+    left: 10%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+}
+
+
+.endtext {
+    line-height: 30px;
+}
+
+.endtext p {
+    line-height: 20px;
+    margin: 20px 0;
+}
+
+.social i {
+    margin-top: 20px;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: var(--navtext-color);
+    color: var(--main-color);
+    font-size: 17px;
+}
+
+.social i:hover {
+    cursor: pointer;
+    rotate: 10deg;
+}
+
+.place {
+    display: flex;
+    margin-top: 10px;
+    line-height: 23px;
+    gap: 10px;
+    font-size: 17px;
+}
+
+.place p:hover {
+    cursor: pointer;
+    color: var(--main-color);
+}
+
+.form {
+    line-height: 30px;
+}
+
+.input-box input {
+    padding: 15px 50px;
+    margin: 20px 0 30px 0;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    font-size: 17px;
+}
+
+footer {
+    text-align: center;
+    background-color: var(--main-color);
+    color: var(--navtext-color);
+    padding: 5px;
+}
+
+.footer {
+    position: relative;
+    top: -600px;
+}
+
+
+.footer a{
+    color: var(--text-alter-color);
+    font-weight: bold;
+}
+
+.footer a:hover{
+    border-bottom: 1px solid var(--text-alter-color);
+    padding-bottom: 1px;
+}
+
+@media screen and (max-width: 1060px) {
+    .bookingform {
+        width: 60%;
+        padding: 0 20%;
+        position: relative;
+        left: 0;
+    }
+}
+
+@media screen and (max-width: 960px) {
+    .bookingform {
+        width: 50%;
+        padding: 0 25% 0 25%;
+        position: relative;
+        left: 0;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        text-align: center;
+    }
+
+    .info-btn button {
+        position: relative;
+        left: 50%;
+    }
+
+    .service {
+        width: 80%;
+        position: relative;
+        top: -630px;
+        left: 10%;
+    }
+
+    .Vendors {
+        width: 80%;
+        position: relative;
+        top: -630px;
+        left: 10%;
+    }
+
+    .Venue {
+        width: 80%;
+        position: relative;
+        top: -630px;
+        left: 10%;
+    }
+
+    .E-invite {
+        width: 80%;
+        position: relative;
+        top: -630px;
+        left: 10%;
+    }
+
+    .Contacts {
+        position: relative;
+        top: -630px;
+    }
+
+    .footer {
+        position: relative;
+        top: -630px;
+    }
+}
+
+@media screen and (max-width: 920px) {
+    .end {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+}
+
+@media screen and (max-width: 840px) {
+    .welcome-text {
+        position: relative;
+        top: -650px;
+    }
+
+    .Vandor-container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    nav button {
+        display: inline-block;
+        background: transparent;
+        font-size: 25px;
+        color: var(--navtext-color);
+        cursor: pointer;
+        border: none;
+    }
+
+    nav button#close-menu-btn {
+        display: none;
+    }
+
+    .navbar {
+        position: fixed;
+        top: 58px;
+        right: 5%;
+        height: fit-content;
+        width: 150px;
+        flex-direction: column;
+        gap: 0px;
+        display: none;
+    }
+
+    .navbar a {
+        width: 100%;
+        height: 50px;
+        animation: animateNavItems 400ms linear forwards;
+        transform-origin: top right;
+        opacity: 0;
+        background: var(--secound-color);
+        box-shadow: -65px 95px 160px rgba(0, 0, 0, 0.6);
+        display: grid;
+        place-items: center;
+    }
+
+    .navbar a:hover {
+        color: var(--navtext-color);
+        border-radius: 0%;
+        border-bottom: 1px solid var(--main-color);
+    }
+
+    #open-menu-btn {
+        display: block;
+    }
+
+    @keyframes animateNavItems {
+        0% {
+            transform: rotateZ(0deg) rotateX(0) scale(0.1);
+        }
+
+        100% {
+            transform: rotateZ(90) rotateX(0) scale(1);
+            opacity: 1;
+        }
+    }
+
+    .bookingform {
+        width: 50%;
+        padding: 0 20% 0 20%;
+    }
+
+    .cards {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (max-width: 740px) {
+    .bookingform {
+        width: 50%;
+        padding: 0 15% 0 15%;
+    }
+}
+
+
+@media screen and (max-width: 630px) {
+    .bookingform {
+        width: 50%;
+        padding: 0 10% 0 10%;
+    }
+}
+
+
+@media screen and (max-width: 600px) {
+    .Venue-container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+
+    .Ecard {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 10px;
+    }
+}
+
+@media screen and (max-width: 580px) {
+    .bookingform {
+        width: 50%;
+        padding: 0 5% 0 5%;
+    }
+}
+
+
+
+@media screen and (max-width: 520px) {
+    .bookingform {
+        display: flex;
+        flex-direction: column;
+        width: 80%;
+        padding: 0 10% 0 10%;
+        margin: 0 10% 0 10%;
+        position: relative;
+        top: -720px;
+    }
+
+    .info-btn button {
+        position: relative;
+        left: 0px;
+        text-align: center;
+    }
+
+    .service {
+        width: 80%;
+        position: relative;
+        top: -670px;
+        left: 10%;
+    }
+
+    .Vendors {
+        width: 80%;
+        position: relative;
+        top: -670px;
+        left: 10%;
+    }
+
+    .Venue {
+        width: 80%;
+        position: relative;
+        top: -670px;
+        left: 10%;
+    }
+
+    .E-invite {
+        width: 80%;
+        position: relative;
+        top: -670px;
+        left: 10%;
+    }
+
+    .Contacts {
+        position: relative;
+        top: -670px;
+    }
+
+    .footer {
+        position: relative;
+        top: -670px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .end {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 20px;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .welcome-text {
+        padding: 145px 0 225px 0;
+    }
+
+    .bookingform .box {
+        padding: 15px 20px;
+        font-size: 15px;
+    }
+
+    .Vandor-container {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 20px;
+    }
+
+    .Ecard {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+    }
+
+    .input-box input {
+        padding: 15px 25px;
+        margin: 10px 0 10px 0;
+        border-radius: 10px;
+        border: none;
+        outline: none;
+        font-size: 15px;
+    }
+}
+
+@media screen and (max-width: 380px) {
+    .welcome-text {
+        padding: 100px 0 230px 0;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .welcome-text {
+        padding: 125px 0 205px 0;
+
+    }
+
+    .cards {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .Venue-container {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 20px;
+    }
+
+}
+
+@media screen and (max-width: 320px) {
+
+    .Ecard {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 10px;
+    }
+}
+
+@media screen and (max-width: 310px) {
+    .bookingform {
+        width: 90%;
+        position: relative;
+    }
+
+}

@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EverafterEvants</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <nav>
+        <div class="nav container">
+            <a href="#" class="logo">EverafterEvants</a>
+            <div class="navbar">
+                <a href="#home" class="nav-link">Home</a>
+                <a href="#service" class="nav-link">Service</a>
+                <a href="#Vendors" class="nav-link">Vendors</a>
+                <a href="#Venue" class="nav-link">Venue</a>
+                <a href="#E-invite" class="nav-link">E-invite</a>
+                <a href="#Contacts" class="nav-link">Contacts</a>
+            </div>
+            <button id="open-menu-btn"><i class="fa-solid fa-bars-staggered"></i></button>
+            <button id="close-menu-btn"><i class="fa-solid fa-xmark"></i></button>
+        </div>
+    </nav>
+
+    <section class="home container" id="home">
+        <img src="img/wedding background.jpg">
+        <div class="welcome-text">
+            <h5>Your Wedding, Your Way</h5>
+            <p>Find The Best Wedding Vendors With Thousands 0f Trusted Reviews</p>
+        </div>
+
+        <form action="" method="post" class="bookingform">
+            <select name="Vendortype" class="box">
+                <option value="" disabled selected>Select Vendor Type </option>
+                <option value="Wedding Venues">Wedding Venues</option>
+                <option value="Family Makeup">Family Makeup</option>
+                <option value="Bridal Makeup">Bridal Makeup</option>
+                <option value="Groom Wear">Groom Wear</option>
+                <option value="Wedding Decoration">Wedding Decoration</option>
+            </select>
+            <select name="City" class="box">
+                <option value="" disabled selected>City</option>
+                <option value="Dhaka">Dhaka</option>
+                <option value="Sylhet">Sylhet</option>
+                <option value="chittagong">Chittagong</option>
+                <option value="Barishal">Barishal</option>
+                <option value="Khulna">Khulna</option>
+                <option value="Rajshahi">Rajshahi</option>
+            </select>
+            <div class="info-btn"><button>Search</button></div>
+        </form>
+    </section>
+
+    <section class="service" id="service">
+        <h1><span>S</span>ervice</h1>
+        <div class="cards">
+            <article class="card">
+                <span class="icon">
+                    <i class="fa-solid fa-book-open"></i>
+                </span>
+                <h3>Invitation</h3>
+                <p>Craft personalized wedding invitations that set the tone for your special day.</p>
+            </article>
+            <article class="card">
+                <span class="icon">
+                    <i class="fa-solid fa-camera"></i>
+                </span>
+                <h3>Photography & Video</h3>
+                <p>Capture every precious moment with expert photography and videography services.</p>
+            </article>
+            <article class="card">
+                <span class="icon">
+                    <i class="fa-solid fa-brush"></i>
+                </span>
+                <h3>Beauty & Makeup</h3>
+                <p>Enhance your natural beauty with professional bridal makeup and styling.</p>
+            </article>
+            <article class="card">
+                <span class="icon">
+                    <i class="fa-brands fa-pagelines"></i>
+                </span>
+                <h3>Wedding Flowers</h3>
+                <p>Create stunning floral arrangements to add elegance and charm to your wedding.</p>
+            </article>
+            <article class="card">
+                <span class="icon">
+                    <i class="fa-solid fa-cake-candles"></i>
+                </span>
+                <h3>Wedding Cake</h3>
+                <p>Design a delicious and beautiful wedding cake that reflects your style.</p>
+            </article>
+            <article class="card">
+                <span class="icon">
+                    <i class="fa-solid fa-music"></i>
+                </span>
+                <h3>Music Band</h3>
+                <p>Set the perfect mood with a live music band tailored to your wedding theme.</p>
+            </article>
+            <article class="card">
+                <span class="icon">
+                    <i class="fa-solid fa-utensils"></i>
+                </span>
+                <h3>Catering</h3>
+                <p>Delight your guests with exquisite catering options for every palate.</p>
+            </article>
+            <article class="card">
+                <span class="icon">
+                    <i class="fa-solid fa-ring"></i>
+                </span>
+                <h3>Jewellery</h3>
+                <p>Adorn yourself with exquisite jewelry that complements your wedding attire perfectly.</p>
+            </article>
+        </div>
+    </section>
+
+    <section class="Vendors" id="Vendors">
+        <h1><span>V</span>endors</h1>
+        <div class="Vandor-container">
+            <div class="vendor-box">
+                <div class="vandor-img">
+                    <img src="img/bridal mackup.jpg" alt="">
+                </div>
+                <div class="star">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                </div>
+                <div class="vendor-info">
+                    <h4>Beauty Tales By Zahid Khan</h4>
+                    <p>Bridal Makeup</p>
+                    <h5>Rs.20.000 Onwards</h5>
+                </div>
+            </div>
+
+            <div class="vendor-box">
+                <div class="vandor-img">
+                    <img src="img/wv1.jpg" alt="">
+                </div>
+                <div class="star">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                </div>
+                <div class="vendor-info">
+                    <h4>Flinters Management</h4>
+                    <p>Wedding Planer</p>
+                    <h5>Rs.1.5 - 3 Lakh</h5>
+                </div>
+            </div>
+
+            <div class="vendor-box">
+                <div class="vandor-img">
+                    <img src="img/wv2.jpg" alt="">
+                </div>
+                <div class="star">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                </div>
+                <div class="vendor-info">
+                    <h4>Wedding Mela</h4>
+                    <p>Wedding Decorations</p>
+                    <h5>Rs.50,000 - 1,50,000</h5>
+                </div>
+            </div>
+
+            <div class="vendor-box">
+                <div class="vandor-img">
+                    <img src="img/wv3.jpg" alt="">
+                </div>
+                <div class="star">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                </div>
+                <div class="vendor-info">
+                    <h4>Groom and Bride Stage</h4>
+                    <p>Wedding Venues</p>
+                    <h5>Rs.2,00,000 - 5,00,000</h5>
+                </div>
+            </div>
+
+            <div class="vendor-box">
+                <div class="vandor-img">
+                    <img src="img/wv4.jpg" alt="">
+                </div>
+                <div class="star">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star-half-stroke"></i>
+                </div>
+                <div class="vendor-info">
+                    <h4>Wedding Mela</h4>
+                    <p>Wedding Decorations</p>
+                    <h5>Rs.50,000 - 80,000</h5>
+                </div>
+            </div>
+
+            <div class="vendor-box">
+                <div class="vandor-img">
+                    <img src="img/wv5.webp" alt="">
+                </div>
+                <div class="star">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                </div>
+                <div class="vendor-info">
+                    <h4>Best food service</h4>
+                    <p>Catering</p>
+                    <h5>Rs.30,000 - 50,000</h5>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="Venue" id="Venue">
+        <h1><span>V</span>enue</h1>
+        <div class="Venue-container">
+            <div class="Venue-box">
+                <img src="img/Dhaka.jpg">
+                <div class="Venue-layer">
+                    <h4>DHAKA</h4>
+                    <p>Hotel Radisson Blu</p>
+                    <a href="#" class="btn"><button>More Info</button></i></a>
+                </div>
+            </div>
+            <div class="Venue-box">
+                <img src="img/Sylhet.jpg">
+                <div class="Venue-layer">
+                    <h4>SYLHET</h4>
+                    <p>Kushiara Convention Hall</p>
+                    <a href="#" class="btn"><button>More Info</button></i></a>
+                </div>
+            </div>
+
+            <div class="Venue-box">
+                <img src="img/Chittagong.jpg">
+                <div class="Venue-layer">
+                    <h4>CHITTAGONG</h4>
+                    <p>Sea Pearl Resort</p>
+                    <a href="#" class="btn"><button>More Info</button></i></a>
+                </div>
+            </div>
+            <div class="Venue-box">
+                <img src="img/khulna.webp">
+                <div class="Venue-layer">
+                    <h4>KHULNA</h4>
+                    <p>Tiger Garden Hotel</p>
+                    <a href="#" class="btn"><button>More Info</button></i></a>
+                </div>
+            </div>
+            <div class="Venue-box">
+                <img src="img/Barishal.jpg">
+                <div class="Venue-layer">
+                    <h4>BARISHAL</h4>
+                    <p>Hotel Grand Park</p>
+                    <a href="#" class="btn"><button>More Info</button></a>
+                </div>
+            </div>
+            <div class="Venue-box">
+                <img src="img/Rajshahi.jpg">
+                <div class="Venue-layer">
+                    <h4>RAJSHAHI</h4>
+                    <p>Hotel Grand River view</p>
+                    <a href="#" class="btn"><button>More Info</button></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="E-invite" id="E-invite">
+        <h1>Card<span> Design</span></h1>
+        <div class="Ecard">
+            <img src="img/card-1.jpg" alt="">
+            <img src="img/card-2.jpg" alt="">
+            <img src="img/card-3.jpg" alt="">
+            <img src="img/card-4.jpg" alt="">
+            <img src="img/card-5.jpg" alt="">
+            <img src="img/card-6.jpg" alt="">
+            <img src="img/card-7.jpg" alt="">
+            <img src="img/card-8.jpg" alt="">
+            <img src="img/card-9.jpg" alt="">
+            <img src="img/card-10.jpg" alt="">
+            <img src="img/card-11.jpg" alt="">
+            <img src="img/card-12.jpg" alt="">
+        </div>
+    </section>
+
+    <section class="Contacts" id="Contacts">
+        <div class="end">
+            <div class="endtext">
+                <h2>EverafterEvents - Your Personal Wedding Planer</h2>
+                <p>Plan Your Wedding With Us EverafterEvents is a Bangladeshi wedding Planning Website</p>
+                <div class="btn"><button>Resistor as a Vendor</button></div>
+                <div class="social">
+                    <i class="fa-brands fa-facebook"></i>
+                    <i class="fa-brands fa-instagram"></i>
+                    <i class="fa-brands fa-linkedin"></i>
+                    <i class="fa-brands fa-twitter"></i>
+                    <i class="fa-brands fa-pinterest"></i>
+                </div>
+            </div>
+            <div class="destination">
+                <h2>Our Location</h2>
+                <div class="place"><i class="fa-solid fa-caret-right"></i>
+                    <p>Dhaka</p>
+                </div>
+                <div class="place"><i class="fa-solid fa-caret-right"></i>
+                    <p>Sylhet</p>
+                </div>
+                <div class="place"><i class="fa-solid fa-caret-right"></i>
+                    <p>Chittagong</p>
+                </div>
+                <div class="place"><i class="fa-solid fa-caret-right"></i>
+                    <p>Barishal</p>
+                </div>
+                <div class="place"><i class="fa-solid fa-caret-right"></i>
+                    <p>Khulna</p>
+                </div>
+                <div class="place"><i class="fa-solid fa-caret-right"></i>
+                    <p>Rajshahi</p>
+                </div>
+            </div>
+            <div class="form">
+                <h2>Our Newsletter</h2>
+                <p>Subscribe For Latest Update</p>
+                <div class="input-box">
+                    <input type="email" placeholder="Email Address">
+                </div>
+                <div class="btn"><button>Subscribe</button></div>
+            </div>
+        </div>
+
+    </section>
+
+    <footer class="footer">
+        <p>&copy; Enjoy the your special day with Everafter Events by <a href="#">_crack_404</a></p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
